@@ -24,7 +24,7 @@ outline:none;
 border-radius: 10px;
 width: 60px;
 height: 60px;
-box-shadow: -8px -8px 10px rgba(255, 255, 255, 0.1),8px 8px 15px rgba(0, 0, 0, 0.2);
+box-shadow: -8px -8px 12px rgba(255, 255, 255, 0.1),8px 8px 15px rgba(0, 0, 0, 0.2);
 background: transparent;
 font-size:20px;
 color: #fff;
@@ -41,7 +41,6 @@ form .input-case{
 form .input-case .screen{
     text-align: right;
     flex:1;
-    background-color: #494f58;
     font-size: 45px;
     box-shadow:none; 
      
@@ -49,21 +48,45 @@ form .input-case .screen{
 form button.btn{
     background: #7f848b;
     color: #000;
+    transition: all 0.2s ease-in;
+}
+form button.btn:hover{
+    background: #5f636a;
+    color: #fff;
+}
+form button.btn:active{
+    transform:scale(0.8)
 }
 form button.btn.equal.operator{
     background: #125549;
     color: #fff;
     width: 145px;
 }
+form button.btn.equal.operator:hover{
+    background: #0f3e3a;
+    color: #fff;
+}
 form button.btn.AC.operator{
     background: #d82727;
     color: #000;   
+}
+form button.btn.AC.operator:hover{
+    background: #b71c1c;
+    color: #fff;
 }
 form button.btn.DE.operator{
     background: #acad42;
     color: #000;   
 }
+form button.btn.DE.operator:hover{
+    background: #8c8b2f;
+    color: #fff;
+}
 form button.btn.maths.operator{
     background: #3a4452;
   color: #fff;
+}
+form button.btn.maths.operator:hover{
+    background: #2c333b;
+    color: #a4a4e7;
 }
